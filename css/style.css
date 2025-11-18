@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f1f1;
+  margin: 0;
+  color: #222;
+}
+header {
+  background: white;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+nav {
+  text-align: right;
+  padding: 0.5rem 0;
+  color: black;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  left: auto;
+}
+nav li {
+  display: inline;
+  margin: 0 1.2rem;
+}
+nav a {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: left;
+}
+section {
+  
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(30, 196, 18, 0.03);
+  text-align: left;
+  background-color: white;
+}
+h2 {
+  color: #333;
+  text-align: left;
+}
+form label {
+  display: block;
+  margin-top: 0.7rem;
+  font-weight: 600;
+}
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+form button:hover {
+  background: #222;
+}
+@media (max-width: 500px) {
+  main {
+    padding: 0 0.3rem;
+  }
+  nav ul {
+    display: block;
+  }
+  nav li {
+    display: block;
+    margin: 0.6rem 0;
+  }
+}
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 2.5rem;
+  color: #000000;
+  font-sirgb(6, 5, 5)1.3rem;
+  font-weight: bold;
+  padding: 0.4rem 0;
+  position: relative;
+  animation: moveRight 6s linear infinite;
+}
+
+@keyframes moveRight {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+ 
